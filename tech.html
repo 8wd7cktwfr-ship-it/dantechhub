@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DAN TECH HUB - Luxury Phones, Laptops & Gadgets</title>
+<link rel="stylesheet" href="./tech.css">
+</head>
+<body>
+
+<div class="topbar">✦ FREE DELIVERY IN LAGOS ON ORDERS ABOVE £500 ✦ 100% ORIGINAL ✦ PAY ON DELIVERY ✦</div>
+
+<header>
+<div class="logo">DAN <span>TECH HUB</span></div>
+<p class="tagline">PREMIUM GADGETS • UK / US QUALITY • TRUSTED SINCE 2020</p>
+<nav>
+<button class="active" onclick="filterAll(this)">All Products</button>
+<button onclick="filterCat('phone',this)">iPhones & Phones</button>
+<button onclick="filterCat('laptop',this)">Laptops</button>
+<button onclick="filterCat('gadget',this)">Gadgets</button>
+<button onclick="filterCat('accessory',this)">Accessories</button>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-left">
+<h4>★ WELCOME TO DAN TECH HUB ★</h4>
+<h1>Own The <span>Future.</span><br>Own It In <span>Gold.</span></h1>
+<p>The No.1 plug for original iPhones, MacBooks, Samsung, PS5, AirPods & more. UK Used & Brand New. No fake. No stress.</p>
+<div class="hero-btns">
+<a href="https://wa.me/2349054177523?text=Hello%20DAN%20TECH%20HUB%2C%20I%20want%20to%20buy" class="btn-gold">💬 Order On WhatsApp</a>
+<a href="#products" class="btn-outline">Shop Now ↓</a>
+</div>
+<div class="hero-stats">
+<div><b>5,000+</b><br><span>Happy Customers</span></div>
+<div><b>4.9 ★</b><br><span>Rating</span></div>
+<div><b>24hrs</b><br><span>Fast Delivery</span></div>
+</div>
+</div>
+<div class="hero-right">
+<img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800" alt="iPhone">
+<div class="hero-badge">🔥 HOT DEAL<br><b>iPhone 15 Pro Max</b><br>£1,150 Only</div>
+</div>
+</section>
+
+<section class="trust">
+<div>✔ 100% Original</div>
+<div>✔ 1 Year Warranty</div>
+<div>✔ Pay On Delivery</div>
+<div>✔ Swap / Trade-In Allowed</div>
+</section>
+
+<div class="search-box">
+<input type="text" id="search" placeholder="🔍 Search iPhone 16, MacBook, Samsung, PS5, AirPods..." oninput="searchProduct()">
+</div>
+
+<section class="cat-banner">
+<div class="cat-card" onclick="filterCat('phone',this)"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600"><h3>PHONES</h3><p>From £150</p></div>
+<div class="cat-card" onclick="filterCat('laptop',this)"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600"><h3>LAPTOPS</h3><p>From £350</p></div>
+<div class="cat-card" onclick="filterCat('gadget',this)"><img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600"><h3>GADGETS</h3><p>From £50</p></div>
+<div class="cat-card" onclick="filterCat('accessory',this)"><img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=600"><h3>ACCESSORIES</h3><p>From £15</p></div>
+</section>
+
+<h2 class="section-title">✦ FEATURED PRODUCTS ✦<span>Best Sellers This Week</span></h2>
+<div class="products" id="products">
+
+<div class="card phone"><span class="badge">HOT</span><img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=500"><h3>iPhone 15 Pro Max 256GB</h3><p>Brand New • Titanium • Unlocked</p><div class="stars">★★★★★ (210)</div><div class="price">£1,150 <span class="old">£1,350</span></div><button class="buy" onclick="buy('iPhone 15 Pro Max 256GB - £1,150')">Buy on WhatsApp</button></div>
+<div class="card phone"><span class="badge">NEW</span><img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=500"><h3>iPhone 16 Pro Max 256GB</h3><p>Latest • A18 Pro • 48MP Camera</p><div class="stars">★★★★★ (98)</div><div class="price">£1,450 <span class="old">£1,600</span></div><button class="buy" onclick="buy('iPhone 16 Pro Max - £1,450')">Buy on WhatsApp</button></div>
+<div class="card phone"><img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500"><h3>iPhone 14 128GB</h3><p>UK Used • Very Neat • Battery 92%</p><div class="stars">★★★★★ (180)</div><div class="price">£550 <span class="old">£650</span></div><button class="buy" onclick="buy('iPhone 14 128GB - £550')">Buy on WhatsApp</button></div>
+<div class="card phone"><img src="https://images.unsplash.com/photo-1592286927505-1def25115558?w=500"><h3>iPhone 13 128GB</h3><p>UK Used • Clean • Battery 89%</p><div class="stars">★★★★☆ (150)</div><div class="price">£420</div><button class="buy" onclick="buy('iPhone 13 - £420')">Buy on WhatsApp</button></div>
+<div class="card phone"><span class="badge">HOT</span><img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=500"><h3>Samsung S24 Ultra 512GB</h3><p>Brand New • 200MP • S-Pen • 5G</p><div class="stars">★★★★★ (230)</div><div class="price">£950 <span class="old">£1,100</span></div><button class="buy" onclick="buy('Samsung S24 Ultra - £950')">Buy on WhatsApp</button></div>
+<div class="card phone"><img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=500"><h3>Samsung S23 Ultra 256GB</h3><p>UK Used • Neat • 12GB RAM</p><div class="stars">★★★★★ (120)</div><div class="price">£680</div><button class="buy" onclick="buy('Samsung S23 Ultra - £680')">Buy on WhatsApp</button></div>
+<div class="card phone"><img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?w=500"><h3>Google Pixel 8 Pro 256GB</h3><p>Brand New • Best Camera Phone</p><div class="stars">★★★★★ (90)</div><div class="price">£700</div><button class="buy" onclick="buy('Google Pixel 8 Pro - £700')">Buy on WhatsApp</button></div>
+<div class="card phone"><img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=500"><h3>iPhone 12 Pro Max 256GB</h3><p>UK Used • Gold • Battery 88%</p><div class="stars">★★★★☆ (110)</div><div class="price">£480</div><button class="buy" onclick="buy('iPhone 12 Pro Max - £480')">Buy on WhatsApp</button></div>
+
+<div class="card laptop"><span class="badge">PREMIUM</span><img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500"><h3>MacBook Pro 14" M3 512GB</h3><p>Brand New • 16GB RAM • 1yr Warranty</p><div class="stars">★★★★★ (200)</div><div class="price">£1,850 <span class="old">£2,100</span></div><button class="buy" onclick="buy('MacBook Pro 14 M3 - £1,850')">Buy on WhatsApp</button></div>
+<div class="card laptop"><img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=500"><h3>MacBook Air M2 256GB</h3><p>Brand New • 13.6" • Midnight</p><div class="stars">★★★★★ (160)</div><div class="price">£1,150</div><button class="buy" onclick="buy('MacBook Air M2 - £1,150')">Buy on WhatsApp</button></div>
+<div class="card laptop"><img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=500"><h3>HP Pavilion 15 - Core i7</h3><p>16GB RAM • 512GB SSD • Win 11</p><div class="stars">★★★★☆ (90)</div><div class="price">£750</div><button class="buy" onclick="buy('HP Pavilion 15 i7 - £750')">Buy on WhatsApp</button></div>
+<div class="card laptop"><img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=500"><h3>Lenovo ThinkPad X1 Carbon</h3><p>Business • 16GB • Touch • i7</p><div class="stars">★★★★★ (75)</div><div class="price">£820</div><button class="buy" onclick="buy('Lenovo ThinkPad X1 - £820')">Buy on WhatsApp</button></div>
+<div class="card laptop"><img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500"><h3>Dell XPS 13 - Core i7</h3><p>UK Used • Very Clean • 512GB SSD</p><div class="stars">★★★★★ (65)</div><div class="price">£680</div><button class="buy" onclick="buy('Dell XPS 13 - £680')">Buy on WhatsApp</button></div>
+<div class="card laptop"><img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=500"><h3>HP EliteBook 840 G8</h3><p>Core i5 • 16GB • 512GB SSD</p><div class="stars">★★★★☆ (80)</div><div class="price">£550</div><button class="buy" onclick="buy('HP EliteBook 840 - £550')">Buy on WhatsApp</button></div>
+
+<div class="card gadget"><span class="badge">HOT</span><img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"><h3>PlayStation 5 Slim + 2 Pads</h3><p>Brand New • 1TB • Disc Version</p><div class="stars">★★★★★ (300)</div><div class="price">£480 <span class="old">£550</span></div><button class="buy" onclick="buy('PS5 Slim - £480')">Buy on WhatsApp</button></div>
+<div class="card gadget"><img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=500"><h3>Apple Watch Series 9 45mm</h3><p>Brand New • GPS • Sealed</p><div class="stars">★★★★★ (140)</div><div class="price">£320</div><button class="buy" onclick="buy('Apple Watch S9 - £320')">Buy on WhatsApp</button></div>
+<div class="card gadget"><img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=500"><h3>iPad 10th Gen 64GB WiFi</h3><p>Brand New • Sealed • 10.9"</p><div class="stars">★★★★★ (130)</div><div class="price">£350</div><button class="buy" onclick="buy('iPad 10th Gen - £350')">Buy on WhatsApp</button></div>
+<div class="card gadget"><img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500"><h3>Samsung Galaxy Watch 6</h3><p>Brand New • 44mm • Black</p><div class="stars">★★★★☆ (70)</div><div class="price">£210</div><button class="buy" onclick="buy('Galaxy Watch 6 - £210')">Buy on WhatsApp</button></div>
+
+<div class="card accessory"><span class="badge">BEST SELLER</span><img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=500"><h3>AirPods Pro 2</h3><p>Original • Noise Cancellation • Type-C</p><div class="stars">★★★★★ (400)</div><div class="price">£180 <span class="old">£230</span></div><button class="buy" onclick="buy('AirPods Pro 2 - £180')">Buy on WhatsApp</button></div>
+<div class="card accessory"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"><h3>AirPods Max - Midnight</h3><p>Original • Over-Ear • Premium Sound</p><div class="stars">★★★★★ (110)</div><div class="price">£420</div><button class="buy" onclick="buy('AirPods Max - £420')">Buy on WhatsApp</button></div>
+<div class="card accessory"><img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=500"><h3>Anker 20,000mAh Power Bank</h3><p>Fast Charging • 2 Ports • LED</p><div class="stars">★★★★★ (220)</div><div class="price">£45</div><button class="buy" onclick="buy('Anker Power Bank - £45')">Buy on WhatsApp</button></div>
+<div class="card accessory"><img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500"><h3>Original iPhone Charger 20W</h3><p>Apple Original • Type-C • Fast</p><div class="stars">★★★★★ (300)</div><div class="price">£25</div><button class="buy" onclick="buy('iPhone Charger 20W - £25')">Buy on WhatsApp</button></div>
+<div class="card accessory"><img src="https://images.unsplash.com/photo-1615526675159-e248c3021d3f?w=500"><h3>JBL Flip 6 Speaker</h3><p>Waterproof • 12hrs Battery • Bass</p><div class="stars">★★★★★ (150)</div><div class="price">£95</div><button class="buy" onclick="buy('JBL Flip 6 - £95')">Buy on WhatsApp</button></div>
+<div class="card accessory"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"><h3>Oraimo FreePods Pro</h3><p>Affordable • Good Bass • ANC</p><div class="stars">★★★★☆ (180)</div><div class="price">£35</div><button class="buy" onclick="buy('Oraimo FreePods Pro - £35')">Buy on WhatsApp</button></div>
+
+</div>
+
+<section class="why">
+<h2>WHY PEOPLE CHOOSE <span>DAN TECH HUB</span></h2>
+<div class="why-grid">
+<div><h3>🥇 100% ORIGINAL</h3><p>We no sell fake. Every device na original, checked and tested before delivery.</p></div>
+<div><h3>🚚 FAST DELIVERY</h3><p>Lagos same day, Abuja / PH / Warri 24-48hrs. We deliver nationwide.</p></div>
+<div><h3>💰 PAY ON DELIVERY</h3><p>You see your product first, confirm am, before you pay. No scam.</p></div>
+<div><h3>🔄 TRADE-IN</h3><p>Bring your old phone/laptop, add small money, collect new one.</p></div>
+</div>
+</section>
+
+<h2 class="section-title">✦ WHAT OUR CUSTOMERS SAY ✦</h2>
+<section class="reviews">
+<div class="review"><p>"I buy iPhone 15 Pro Max from Dan Tech Hub, e reach me same day for Lagos. Very original, battery 100%. I trust am."</p><b>- Chiamaka, Lagos ★★★★★</b></div>
+<div class="review"><p>"I don buy 3 laptops from here for my office. No wahala at all. Na my only plug now."</p><b>- Mr. Emmanuel, Warri ★★★★★</b></div>
+<div class="review"><p>"I send money from UK, dem deliver to my mama for PH. God bless Dan Tech Hub, very honest."</p><b>- Blessing, UK ★★★★★</b></div>
+</section>
+
+<section class="faq">
+<h2>FREQUENTLY ASKED QUESTIONS</h2>
+<details><summary>Do you deliver outside Lagos?</summary><p>Yes! We deliver to Warri, Abuja, PH, Benin, Asaba, everywhere in Nigeria. 24-48hrs.</p></details>
+<details><summary>Can I pay on delivery?</summary><p>Yes for Lagos. Outside Lagos, you pay small deposit, balance on delivery.</p></details>
+<details><summary>Do you give warranty?</summary><p>Yes, 1 month warranty for UK Used, 1 year for Brand New.</p></details>
+<details><summary>Do you accept trade-in?</summary><p>Yes! Bring your old device, we go value am and you add money for new one.</p></details>
+</section>
+
+<section class="cta">
+<h2>Ready To Order?</h2>
+<p>Chat us now on WhatsApp, we go reply in less than 5 minutes.</p>
+<a href="https://wa.me/2349054177523?text=Hello%20DAN%20TECH%20HUB%2C%20I%20want%20to%20order">💬 CHAT NOW - 09054177523</a>
+</section>
+
+<footer>
+<h3>DAN <span>TECH HUB</span></h3>
+<p>WhatsApp: +234 905 417 7523 | Warri, Lagos, Nigeria | UK / US Devices</p>
+<p>Instagram: @dantechhub | TikTok: @dantechhub</p>
+<p>© 2026 DAN TECH HUB - All Rights Reserved</p>
+</footer>
+
+<a class="float-wa" href="https://wa.me/2349054177523?text=Hello%20DAN%20TECH%20HUB%2C%20I%20want%20to%20buy">💬</a>
+<script src="./tech.js"></script>
+</body>
+</html>
